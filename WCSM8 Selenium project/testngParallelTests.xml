@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" parallel="tests" name="Test">
+  <parameter name="browser" value="chrome"></parameter>
+  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"></parameter>
+  <parameter name="userN" value="Admin"></parameter>
+  <parameter name="pass" value="admin123"></parameter>
+  <classes>
+  <class name="testNGExecution.ParallelTestsExcetion"/>
+  </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" parallel="tests" name="FTest">
+  <parameter name="browser" value="firefox"></parameter>
+  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"></parameter>
+  <parameter name="userN" value="Admin"></parameter>
+  <parameter name="pass" value="admin123"></parameter>
+  <classes>
+  <class name="testNGExecution.ParallelTestsExcetion"/>
+  </classes>
+  
+  </test> <!-- Test -->
+   
+</suite> <!-- Suite -->
