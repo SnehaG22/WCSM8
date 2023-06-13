@@ -29,7 +29,7 @@ public class Instagram {
 			System.out.println("we can not perform login ss is taken");
 			TakesScreenshot ts=(TakesScreenshot)driver;
 			File src = ts.getScreenshotAs(OutputType.FILE);
-			File dest = new File("./screenshot/loginbtn.jpg");
+			File dest = new File("./screenshot/loginbtn1.jpg");
 			Files.copy(src, dest);
 					
 		}
