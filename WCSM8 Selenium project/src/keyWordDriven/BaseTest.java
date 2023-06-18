@@ -4,8 +4,12 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.grid.Main;
 
 public class BaseTest extends Utility {
+	public static void main(String[] args) {
+		
+	}
 	public void openBrowser() throws IOException
 	{
 		Utility u = new Utility();
@@ -16,6 +20,10 @@ public class BaseTest extends Utility {
 	      WebDriver	 driver=new ChromeDriver();
 	      driver.manage().window().maximize();
 	      driver.get(url);
+	 }
+	 else
+	 {
+		 
 	 }
 		 
 	}
